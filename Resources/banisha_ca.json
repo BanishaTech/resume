@@ -1,0 +1,100 @@
+{
+    "name": "Banisha Kumari",
+    "surname": "Shrestha",
+    "profilePhoto": "https://media.licdn.com/dms/image/D4D03AQH0gd4yBpr1mw/profile-displayphoto-shrink_200_200/0/1716321547440?e=2147483647&v=beta&t=40vjmbJ_9HdxTQm6sTNgGTtoGxl03XYHgqWuuCINcXk",
+    "email": "example@gmail.com",
+    "location": "Esplugues, Barcelona",
+    "summaryTitle": "Resum",
+    "summaryContent": "Sóc una persona apassionada i motivada, actualment sóc junior developer de software amb un desig constant d'aprendre i millorar. Tinc coneixements bàsics de JavaScript, HTML5, CSS3 i m'encanta treballar en equip i descobrir noves coses. Sempre busco l'oportunitat d'aprendre més i créixer en termes personals i professionals.",
+    "skillsTitle": "Habilitats",
+    "skills": [
+        {
+            "skillTitle": "HTML5",
+            "percentage": 33
+        },
+        {
+            "skillTitle": "CSS3",
+            "percentage": 22
+        },
+        {
+            "skillTitle": "JS",
+            "percentage": 23
+        }
+    ],
+    "educationTitle": "Estudis",
+    "educationItems": [
+        {
+            "startDate": "2021",
+            "endDate": "Actualitat",
+            "title": "Grau en Criminologia",
+            "summary": "Estudi del grau de Criminologia oficial en què entre altres temes hem vist l'existència i la prevenció de ciberdelictes.",
+            "organization": "Universitat Oberta de Catalunya"
+        },
+        {
+            "startDate": "2020",
+            "endDate": "2021",
+            "title": "Grau Superior en Dietètica i Nutrició Esportiva",
+            "summary": "M'ha proporcionat coneixements especialitzats en la planificació de dietes equilibrades per a esportistes, l'optimització del rendiment físic a través de l'alimentació adequada, la importància dels nutrients en la recuperació muscular i la hidratació, així com l'aplicació d'estratègies nutricionals específiques per a diferents tipus d'esports.",
+            "organization": "Colegi Cami, Barcelona"
+        }
+    ],
+    "professionalExperienceTitle": "Experiència Professional",
+    "professionalExperienceItems": [
+        {
+            "startDate": "Feb 2024",
+            "endDate": "Actualitat",
+            "title": "Desenvolupadora Junior de Software",
+            "summary": "Aprenentatge bàsic i posada en pràctica de tecnologies de desenvolupament web i low code."
+        }
+    ],
+    "hobbiesTitle": "Aficions i Interessos",
+    "hobbies": [
+        {
+            "icon": "fa-solid fa-music",
+            "title": "Ballar"
+        },
+        {
+            "icon": "fa-solid fa-film",
+            "title": "Cinema"
+        },
+        {
+            "icon": "fa-solid fa-utensils",
+            "title": "Cuinar"
+        }
+    ],
+    "languageTitle": "Idiomes",
+    "languageItems": [
+        {
+            "title": "Espanyol",
+            "percentage": 100
+        },
+        {
+            "title": "Nepalès",
+            "percentage": 100
+        },
+        {
+            "title": "Català",
+            "percentage": 95
+        },
+        {
+            "title": "Anglès",
+            "percentage": 65
+        },
+        {
+            "title": "Hindi",
+            "percentage": 65
+        }
+    ],
+    "whereIAm": [
+        {
+            "title": "GitHub",
+            "icon": "fa-brands fa-square-github",
+            "url": "https://github.com/BanishaTech"
+        },
+        {
+            "title": "LinkedIn",
+            "icon": "fa-brands fa-linkedin",
+            "url": "https://es.linkedin.com/in/banisha-kumari-shrestha-6aa553210"
+        }
+    ]
+}
