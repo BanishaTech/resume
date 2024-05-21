@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: "Urbanist", sans-serif;
+
+}
+
+.educationIndentation {
+    margin-left: 32px;
+    margin-top: 0;
+}
+
+.educationDate {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-bottom: 0;
+    opacity: 0.6;
+
+
+}
+
+.educationTitle {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.educationOrganization {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.educationSummary {
+    font-size: 12px;
+}
+
+.educationItemContainer {
+ list-style-type: none;
+ padding-left: 20px;
+ border-radius: 12px;
+ border-color: #ff8080;
+ border-width: 2px;
+ border-style: solid;
+ width: 60%;
+ margin-bottom: 12px;
+}
