@@ -1,0 +1,100 @@
+{
+    "name": "Banisha Kumari",
+    "surname": "Shrestha",
+    "profilePhoto": "https://media.licdn.com/dms/image/D4D03AQH0gd4yBpr1mw/profile-displayphoto-shrink_200_200/0/1716321547440?e=2147483647&v=beta&t=40vjmbJ_9HdxTQm6sTNgGTtoGxl03XYHgqWuuCINcXk",
+    "email": "example@gmail.com",
+    "location": "Esplugues, Barcelona",
+    "summaryTitle": "Resumen",
+    "summaryContent": "Soy una persona pasionada y motivada, actualmente soy junior sowftware developer y tengo unas ganas constantes de aprender y mejorar.\nTengo conocimientos básicos JavaScript, HTML5, CSS3 me encanta trabajar en equipo y descubrir nuevas cosas. Siempre busco la oportunidad de aprender más y crecer en términos personales y profesionales.",
+    "skillsTitle": "Habilidades",
+    "skills": [
+        {
+            "skillTitle": "HTML5",
+            "percentage": 33
+        },
+        {
+            "skillTitle": "CSS3",
+            "percentage": 22
+        },
+        {
+            "skillTitle": "JS",
+            "percentage": 23
+        }
+    ],
+    "educationTitle": "Estudios",
+    "educationItems": [
+        {
+            "startDate": "2021",
+            "endDate": "Actualidad",
+            "title": "Grado en Criminología",
+            "summary": "Estudio del grado de Criminología oficial en el que entre otros temas hemos visto la existencia y la prevención de ciberdelitos",
+            "organization": "Universitat Oberta de Catalunya"
+        },
+        {
+            "startDate": "2020",
+            "endDate": "2021",
+            "title": "Grado Superior en Dietética y Nutrición Deportiva",
+            "summary": "Me ha proporcionado conocimientos especializados en la planificación de dietas equilibradas para deportistas, la optimización del rendimiento físico a través de la alimentación adecuada, la importancia de los nutrientes en la recuperación muscular y la hidratación, así como la aplicación de estrategias nutricionales específicas para diferentes tipos de deportes ",
+            "organization": "Colegi Cami, Barcelona"
+        }
+    ],
+    "profesionalExperienceTitle": "Experiencia Profesional",
+    "profesionalExperienceItems": [
+        {
+            "startDate": "Feb 2024",
+            "endDate": "Actualidad",
+            "title": "Desarolladora Junior de Software",
+            "summary": "Aprendizaje básico y puesta en práctica de tecnologías de desarrollo web y low code"
+        }
+    ],
+    "hobbies": [
+        {
+            "icon": "fa-solid fa-music",
+            "title": "Bailar"
+        },
+        {
+            "icon": "fa-solid fa-film",
+            "title": "Cine"
+        },
+        {
+            "icon": "fa-solid fa-utensils",
+            "title": "Cocinar"
+        }
+    ],
+    "hobbiesTitle": "Aficiones e intereses",
+    "languageTitle": "Idiomas",
+    "languageItems": [
+        {
+            "title": "Español",
+            "percentage": 100
+        },
+        {
+            "title": "Nepali",
+            "percentage": 100
+        },
+        {
+            "title": "Catalán",
+            "percentage": 95
+        },
+        {
+            "title": "Inglés",
+            "percentage": 65
+        },
+        {
+            "title": "Indio",
+            "percentage": 65
+        }
+    ],
+    "whereIAm": [
+        {
+            "title": "GitHub",
+            "icon": "fa-brands fa-square-github",
+            "url": "https://github.com/BanishaTech"
+        },
+        {
+            "title": "LinkedIn",
+            "icon": "fa-brands fa-linkedin",
+            "url": "https://es.linkedin.com/in/banisha-kumari-shrestha-6aa553210"
+        }
+    ]
+}
