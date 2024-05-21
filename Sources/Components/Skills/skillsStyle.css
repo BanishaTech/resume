@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: "Urbanist", sans-serif;
+}
+
+
+#skillsContainer {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 24px;
+    color: dimgrey;
+    padding-top: 32px;
+}
+
+#skillsTitle {
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+#skillsLevelContainer{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#progressBar {
+height: 3px;
+width: 120px;
+background-color: lightgray;
+}
+
+#progressBarFill {
+    height: 100%;
+    width: 50%;
+    background-color: #ff8080;
+}
+
+#skillItem {
+    font-size: 16px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
+
+#skillItemTitle {
+     font-size: 16px;
+     margin-bottom: 8px;
+} 
