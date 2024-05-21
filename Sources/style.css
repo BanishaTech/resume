@@ -1,28 +1,29 @@
-html, body {
-   margin: 0;
-   background-color: #401F71;
+html,
+body {
+  margin: 0;
+  background-color: #401F71;
 }
 
 .textLoading {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    /*border: solid 2px blue;*/
-    color: #EEEEEE;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+  color: #EEEEEE;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    /*border: solid 2px red;*/
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
 }
 
-.loadingContainer{
-    /*border: solid 2px green;*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.loadingContainer {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 
@@ -33,7 +34,7 @@ html, body {
   }
 
   50% {
-     transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
 
   100% {
@@ -42,17 +43,22 @@ html, body {
 }
 
 @keyframes flip-opacity {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
     transform: scaleX(1);
   }
+
   49.999999% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
     transform: scaleX(1);
   }
+
   50.0000001% {
     opacity: 1;
   }
@@ -60,11 +66,11 @@ html, body {
 
 @keyframes rotate-counter-clockwise {
   0% {
-     transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
   }
-  
+
   50% {
-     transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 
   100% {
@@ -76,7 +82,7 @@ html, body {
   margin: 20px;
   color: #76ABAE;
   animation:
-    rotate-clockwise 3s linear 0s infinite, /* Rotación en sentido de las agujas del reloj */
-    flip-opacity 7s linear 0s infinite, /* Opacidad y flip después de 1 segundo */
-    rotate-counter-clockwise 3s linear 0s infinite; 
+    rotate-clockwise 3s linear 0s infinite,
+    flip-opacity 7s linear 0s infinite,
+    rotate-counter-clockwise 3s linear 0s infinite;
 }

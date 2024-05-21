@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', (evento) => {
 
                     const linkElements = doc.querySelectorAll('link');
 
-                    // Añadir cada elemento <link> al <head> del documento actual
+                    // Add each link element to the head
                     linkElements.forEach(link => {
                         document.head.appendChild(link.cloneNode(true));
                     });
@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', (evento) => {
                     skillsContainer.removeChild(skillsLevelContainer)
 
                     const skillItems = skillsLevelContainer.querySelectorAll('#skillItem');
-                    const skillItemTemplate = skillItems[0]; // Obtenemos el HTML del contenedor
+                    const skillItemTemplate = skillItems[0]; // Get the first skill item to use it as template
 
-                    // Eliminar los elementos skillItem del contenedor de habilidades
+                    // Remove the items inside of skill item container because they are samples
                     skillItems.forEach(skillItem => {
                         skillItem.parentNode.removeChild(skillItem);
                     });
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', (evento) => {
                     });
 
                     skillsContainer.innerHTML += skillsLevelContainer.outerHTML
-                    // Añade el skillsContainer al body
+                    // Add the skill containe to the body
 
                     document.body.appendChild(skillsContainer);
 
