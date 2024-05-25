@@ -5,6 +5,11 @@
 
 }
 
+#hobbiesSectionContainer{
+    color: dimgrey;
+    margin-bottom: 32px;
+}
+
 #hobbiesTitle {
     font-weight: 600;
     font-size: 24px;
@@ -13,6 +18,7 @@
 .hobbiesItemsContainer {
     display: inline-flex;
     flex-direction: row;
+    margin-top: 16px;
 }
 
 .hobbiesItem {

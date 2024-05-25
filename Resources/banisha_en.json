@@ -6,7 +6,7 @@
     "location": "Esplugues, Barcelona",
     "summaryTitle": "Summary",
     "summaryContent": "I am a passionate and motivated individual, currently a junior software developer with a constant desire to learn and improve. I have basic knowledge of JavaScript, HTML5, CSS3, and I love working in teams and discovering new things. I always seek opportunities to learn more and grow both personally and professionally.",
-    "skillsTitle": "Skills",
+    "skillsSectionTitle": "Skills",
     "skills": [
         {
             "skillTitle": "HTML5",

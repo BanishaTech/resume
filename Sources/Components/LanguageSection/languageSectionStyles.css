@@ -7,6 +7,7 @@
 
 #languageSectionContainer {
     margin: 0;
+    color: dimgrey;
 }
 
 .languageItems {
@@ -18,11 +19,13 @@
 .languageItem {
     margin-right: 14px;
     color: dimgrey;
+    margin-bottom: 32px;
 }
 
 .languageTitle {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    padding-bottom: 16px;
+    font-weight: 600;
 }
 
 .languageItemTitle {
