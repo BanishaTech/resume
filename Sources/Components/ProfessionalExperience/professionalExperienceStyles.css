@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: "Urbanist", sans-serif;
+}
+
+.professionalExperienceItem {
+    margin: 0 0 8px 0;
+    border: solid 2px #76ABAE;
+    border-radius: 12px;
+    padding: 14px; 
+    list-style: none;
+}
+
+.professionalExperienceDate {
+    margin: 0;
+    
+    font-size: 12px;
+    text-decoration: underline;
+    margin-bottom: 0;
+    opacity: 0.6;
+}
+
+.professionalExperienceTitle {
+    margin: 0;
+    font-weight: 600;
+    margin-right: 20px;
+    opacity: 1;
+}
+
+.professionalExperienceSummary {
+    margin: 8px 0 0 0;
+}
+
+.professionalExperienceCompany {
+    margin: 0;
+    opacity: 0.6;
+    
+}
+
+#professionalExperience {}
+
+#professionalExperienceItems {
+
+}
+
+.professionalExperienceHeader {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.professionalIndentation{
+    margin-left: 32px;
+}
