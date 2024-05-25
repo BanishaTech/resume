@@ -86,6 +86,7 @@
             "percentage": 65
         }
     ],
+    "whereIAmTitle":"Dónde puedes encontrarme",
     "whereIAm": [
         {
             "title": "GitHub",
