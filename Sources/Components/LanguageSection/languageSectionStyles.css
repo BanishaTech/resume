@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: "Urbanist", sans-serif;
+
+}
+
+#languageSectionContainer {
+    margin: 0;
+}
+
+.languageItems {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.languageItem {
+    margin-right: 14px;
+    color: dimgrey;
+}
+
+.languageTitle {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.languageItemTitle {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.languageProgressBar {
+    height: 3px;
+    width: 120px;
+    background-color: lightgray;
+}
+
+
+.languageProgressBarColor {
+    height: 100%;
+    width: 50%;
+    background-color: #76ABAE;
+}
