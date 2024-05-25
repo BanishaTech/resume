@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+* {
+    font-family: "Urbanist", sans-serif;
+
+}
+
+#hobbiesTitle {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.hobbiesItemsContainer {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.hobbiesItem {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: self-end;
+    min-width: 40px;
+    margin: 8px;
+}
+
+.hobbiesItemIcon {
+    align-self: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+.hoobiesItemTitle {
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 3px;
+    font-size: 14px;
+    margin-top: 8px;
+}
