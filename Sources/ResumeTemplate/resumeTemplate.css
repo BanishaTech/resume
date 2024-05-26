@@ -74,6 +74,11 @@ body {
 
 @media only screen and (max-width: 600px) {
     .profilePhoto {
+        width: 128px;
+        height: 128px;
+    }
+
+    #profileNameColumn {
         font-size: 32px;
     }
 }

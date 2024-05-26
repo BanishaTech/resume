@@ -40,52 +40,80 @@ body {
 }
 
 
-
+@-webkit-keyframes rotate-clockwise {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
 @keyframes rotate-clockwise {
   0% {
     transform: rotateZ(0deg);
   }
-
   50% {
     transform: rotateZ(180deg);
   }
-
   100% {
     transform: rotateZ(180deg);
   }
 }
 
-@keyframes flip-opacity {
-
-  0%,
-  100% {
+@-webkit-keyframes flip-opacity {
+  0%, 100% {
     opacity: 1;
     transform: scaleX(1);
   }
-
   49.999999% {
     opacity: 1;
   }
-
   50% {
     opacity: 0;
     transform: scaleX(1);
   }
-
+  50.0000001% {
+    opacity: 1;
+  }
+}
+@keyframes flip-opacity {
+  0%, 100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  49.999999% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
   50.0000001% {
     opacity: 1;
   }
 }
 
+@-webkit-keyframes rotate-counter-clockwise {
+  0% {
+    transform: rotateZ(180deg);
+  }
+  50% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 @keyframes rotate-counter-clockwise {
   0% {
     transform: rotateZ(180deg);
   }
-
   50% {
     transform: rotateZ(360deg);
   }
-
   100% {
     transform: rotateZ(360deg);
   }
@@ -94,6 +122,10 @@ body {
 .loadingIcon {
   margin: 20px;
   color: #76ABAE;
+  -webkit-animation:
+    rotate-clockwise 3s linear 0s infinite,
+    flip-opacity 7s linear 0s infinite,
+    rotate-counter-clockwise 3s linear 0s infinite;
   animation:
     rotate-clockwise 3s linear 0s infinite,
     flip-opacity 7s linear 0s infinite,

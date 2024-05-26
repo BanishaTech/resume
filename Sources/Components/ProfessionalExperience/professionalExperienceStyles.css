@@ -23,7 +23,7 @@
 @media only screen and (max-width: 600px) {
 
     .professionalExperienceItem {
-        width: calc(100% - 20px);
+        width: calc(100% - (20px + 32px));
     }
 }
 
