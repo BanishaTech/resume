@@ -5,13 +5,31 @@
 
 }
 
+html {
+    margin: 0;
+}
+
 body {
     margin: 0;
     color: whitesmoke;
     background-color: #f1f5cc;
     margin-left: 24px;
     margin-right: 24px;
+    animation: fadeIn 0.35s ease-in-out;
 }
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 #profileHeader {
     display: flex;
@@ -34,6 +52,13 @@ body {
     object-fit: cover;
 }
 
+@media only screen and (max-width: 600px) {
+    .profilePhoto {
+        width: 128px;
+        height: 128px;
+    }
+}
+
 #profileNameColumn {
     display: flex;
     flex-direction: column;
@@ -47,7 +72,13 @@ body {
     min-width: fit-content;
 }
 
-#profileNameColumn > p {
+@media only screen and (max-width: 600px) {
+    .profilePhoto {
+        font-size: 32px;
+    }
+}
+
+#profileNameColumn>p {
     margin-top: 0;
     margin-bottom: 16px;
 }
@@ -91,4 +122,10 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 
+}
+
+footer {
+    margin: 0;
+    color: dimgrey;
+    padding: 20px 0 20px 0;
 }
