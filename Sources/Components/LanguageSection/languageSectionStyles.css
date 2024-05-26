@@ -13,13 +13,14 @@
 #languageItems {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
 .languageItem {
-    margin-right: 14px;
     color: dimgrey;
     margin-bottom: 32px;
+    margin-left: 32px;
 }
 
 .languageTitle {

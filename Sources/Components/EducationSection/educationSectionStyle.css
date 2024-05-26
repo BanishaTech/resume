@@ -46,12 +46,19 @@
 }
 
 .educationItemContainer {
- list-style-type: none;
- padding: 20px;
- border-radius: 12px;
- border-color: #ff8080;
- border-width: 2px;
- border-style: solid;
- width: 60%;
- margin-bottom: 32px;
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 12px;
+    border-color: #ff8080;
+    border-width: 2px;
+    border-style: solid;
+    width: 60%;
+    margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .educationItemContainer {
+         width: calc(100% - (20px + 32px));
+    }
 }

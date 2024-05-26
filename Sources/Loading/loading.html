@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
         <base href="../../">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
-        <link rel="stylesheet" href="Sources/ResumeTemplate/resumeTemplate.css">
+        <title>Loading</title>
         <!-- Favicon in various sizes and formats -->
         <link rel="icon" href="Resources/favicon/favicon.ico"
             type="image/x-icon">
@@ -26,35 +25,19 @@
 
         <!-- Manifest for Progressive Web App -->
         <link rel="manifest" href="Resources/favicon/site.webmanifest">
+        <link rel="stylesheet" href="Sources/Loading/style.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
             integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div id="profileHeader">
-            <img class="profilePhoto"
-                src="{{profilePhoto}}"
-                alt>
-
-            <div id="profileNameColumn">
-                <p>{{name}}</p>
-                <p>{{surname}}</p>
-
-            </div>
-
-            <div id="contactSuperContainer">
-                <div class="contactContainer">
-                    <i class="fa-solid fa-square-envelope favicon"></i>
-                    <p class="contactData">{{email}}</p>
-                </div>
-
-                <div class="contactContainer">
-                    <i class="fa-solid fa-location-dot favicon"></i>
-                    <p class="contactData">{{location}}</p>
-                </div>
-            </div>
-
+        <div class="container">
+            <div class="loadingContainer">
+                <h1 class="textLoading">Loading</h1><i
+                    class="fa-solid fa-hourglass-start fa-2x loadingIcon icon-flip"></i></div>
         </div>
+
+        <script src="Sources/Loading/resumeTemplate.js"></script>
     </body>
 </html>
