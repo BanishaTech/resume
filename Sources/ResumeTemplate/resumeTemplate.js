@@ -1,19 +1,20 @@
 const descriptionPath = "/Sources/Components/Description/description.html";
 const skillsPath = "/Sources/Components/Skills/skills.html";
+const educationSectionPath = "/Sources/Components/EducationSection/educationSection.html";
+const professionalExperienceSectionPath = "/Sources/Components/ProfessionalExperience/professionalExperience.html";
+const languageSectionPath = "/Sources/Components/LanguageSection/languageSection.html";
+const hobbiesSectionPath = "/Sources/Components/HobbiesSection/hobbiesSection.html";
+const whereIAmSectionPath = "/Sources/Components/WhereIAmSection/whereIAmSection.html";
+const esJSON = "/Resources/banisha_es.json";
+const enJSON = "/Resources/banisha_en.json";
+const caJSON = "/Resources/banisha_ca.json";
 
-const skillItemList = [{
-    skillTitle: "HTML5",
-    percentage: 33
-}, {
-    skillTitle: "CSS3",
-    percentage: 12
-}, {
-    skillTitle: "JS",
-    percentage: 100
-}
-]
 
-document.addEventListener('DOMContentLoaded', (evento) => {
+
+document.addEventListener('DOMContentLoaded', async () => {
+    const jsonToDownload = getJsonLanguague();
+    let resumeObject = await getJsonData(jsonToDownload)
+    console.log(resumeObject)
     fetch(descriptionPath)
         .then(response => response.text())
         .then(data => {
@@ -22,53 +23,172 @@ document.addEventListener('DOMContentLoaded', (evento) => {
         .then(_ => {
             fetch(skillsPath)
                 .then(response => response.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(data, 'text/html');
+                .then(componentHTMLData => {
 
-                    const linkElements = doc.querySelectorAll('link');
+                    const sectionName = "skillsContainer"
+                    const itemListContainerName = "skillsLevelContainer"
+                    const itemContainerName = "skillItem"
 
-                    // Add each link element to the head
-                    linkElements.forEach(link => {
-                        document.head.appendChild(link.cloneNode(true));
-                    });
+                    fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.skills);
 
-                    var skillsContainer = doc.getElementById('skillsContainer');
+                    fetch(educationSectionPath)
+                        .then(response => response.text())
+                        .then(componentHTMLData => {
+                            const sectionName = "educationSection";
+                            const itemListContainerName = "educationItemsContainer";
+                            const itemContainerName = "educationItemContainer";
+
+                            fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.educationItems);
+
+                            fetch(languageSectionPath)
+                                .then(response => response.text())
+                                .then(componentHTMLData => {
+                                    const sectionName = "languageSectionContainer";
+                                    const itemListContainerName = "languageItems";
+                                    const itemContainerName = "languageItem";
+
+                                    fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.languageItems);
+
+                                    fetch(professionalExperienceSectionPath)
+                                        .then(response => response.text())
+                                        .then(componentHTMLData => {
+                                            const sectionName = "professionalExperience";
+                                            const itemListContainerName = "professionalExperienceItems";
+                                            const itemContainerName = "professionalExperienceItem";
+
+                                            fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.professionalExperienceItems);
+
+                                            fetch(hobbiesSectionPath)
+                                                .then(response => response.text())
+                                                .then(componentHTMLData => {
+                                                    const sectionName = "hobbiesSectionContainer";
+                                                    const itemListContainerName = "hobbiesItemsContainer";
+                                                    const itemContainerName = "hobbiesItem";
+
+                                                    fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.hobbies);
+                                                    fetch(whereIAmSectionPath)
+                                                        .then(response => response.text())
+                                                        .then(componentHTMLData => {
+
+                                                            const sectionName = "whereIAmContainer";
+                                                            const itemListContainerName = "whereIAmItems";
+                                                            const itemContainerName = "whereIAmItem";
+
+                                                            fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, resumeObject.whereIAm);
+
+                                                            document.body.innerHTML = replaceAllKeysIn(document.body.innerHTML, resumeObject)
+
+                                                        })
+                                                })
+                                        })
+                                })
 
 
-                    var skillsLevelContainer = doc.getElementById('skillsLevelContainer');
-                    skillsContainer.removeChild(skillsLevelContainer)
 
-                    const skillItems = skillsLevelContainer.querySelectorAll('#skillItem');
-                    const skillItemTemplate = skillItems[0]; // Get the first skill item to use it as template
-
-                    // Remove the items inside of skill item container because they are samples
-                    skillItems.forEach(skillItem => {
-                        skillItem.parentNode.removeChild(skillItem);
-                    });
-
-                    const skillItemElements = skillItemList.map(skillItem => {
-                        var skillItemTemplateCloneNode = skillItemTemplate.cloneNode(true)
-
-                        let contentModified = skillItemTemplateCloneNode.innerHTML.replace(/{{(.*?)}}/g, (_, key) => skillItem[key] || `{{${key}}}`);
-                        skillItemTemplateCloneNode.innerHTML = contentModified;
-
-                        skillItemTemplateCloneNode.querySelector('#progressBarFill').style.width = skillItem.percentage + "%";
-                        return skillItemTemplateCloneNode;
-                    });
-
-                    skillItemElements.forEach(skillItem => {
-                        skillsLevelContainer.appendChild(skillItem);
-                    });
-
-                    skillsContainer.innerHTML += skillsLevelContainer.outerHTML
-                    // Add the skill containe to the body
-
-                    document.body.appendChild(skillsContainer);
-
+                        })
                 })
                 .catch(error => console.error('Error al cargar el componente:', error));
         })
         .catch(error => console.error('Error al cargar el componente:', error));
 });
 
+
+function getJsonLanguague() {
+    const url = new URL(window.location.href);
+
+    const params = new URLSearchParams(url.search);
+
+    const paramValue = params.get('lang') ?? "en";
+    var jsonToDownload
+
+    switch (paramValue) {
+        case "en":
+            jsonToDownload = enJSON;
+            break;
+
+        case "es":
+            jsonToDownload = esJSON;
+            break;
+
+        case "ca":
+            jsonToDownload = caJSON;
+            break;
+
+        default:
+            jsonToDownload = enJSON;
+            break;
+
+    };
+
+    return jsonToDownload;
+}
+
+
+async function getJsonData(jsonURL) {
+    const jsonResponse = await fetch(jsonURL);
+    return await jsonResponse.json();
+}
+
+
+function replaceAllKeysIn(stringToReplace, dataMap) {
+    return stringToReplace.replace(/{{(.*?)}}/g, (_, key) => dataMap[key] || `{{${key}}}`);
+}
+
+
+function getHTMLDocument(data) {
+    const parser = new DOMParser();
+    return parser.parseFromString(data, 'text/html');
+}
+
+function addHTMLComponentLinks(doc) {
+    const linkElements = doc.querySelectorAll('link');
+    linkElements.forEach(link => {
+        document.head.appendChild(link.cloneNode(true));
+    });
+}
+
+function getItemTemplate(doc, containerName, itemTemplateClass) {
+    const container = doc.getElementById(containerName);
+    return container.querySelectorAll("." + itemTemplateClass)[0];
+}
+
+
+function removeItemTemplates(componentDocument, containerName, itemTemplateClass) {
+    const container = componentDocument.getElementById(containerName);
+    console.log(container)
+    const items = container.querySelectorAll("." + itemTemplateClass);
+
+    items.forEach(item => {
+        container.removeChild(item)
+    });
+}
+
+function fillItems(container, dataToFill, template) {
+    dataToFill.forEach(dataItemToFill => {
+        const templateItem = template.cloneNode(true);
+        container.innerHTML += replaceAllKeysIn(templateItem.outerHTML, dataItemToFill)
+    })
+}
+
+
+function fillTemplateComponent(componentHTMLData, sectionName, itemListContainerName, itemContainerName, elementsToFill) {
+    var doc = getHTMLDocument(componentHTMLData);
+    addHTMLComponentLinks(doc);
+
+    console.log(doc);
+    console.log(itemListContainerName);
+    console.log(itemContainerName);
+
+    const itemTemplate = getItemTemplate(doc, itemListContainerName, itemContainerName);
+    console.log(itemTemplate);
+    removeItemTemplates(doc, itemListContainerName, itemContainerName)
+
+    const itemsContainer = doc.getElementById(itemListContainerName);
+    const section = doc.getElementById(sectionName);
+    section.removeChild(itemsContainer);
+
+    fillItems(itemsContainer, elementsToFill, itemTemplate);
+
+    section.appendChild(itemsContainer);
+    document.body.innerHTML += section.outerHTML;
+}

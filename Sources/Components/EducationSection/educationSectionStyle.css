@@ -5,6 +5,17 @@
 
 }
 
+#educationSection {
+    color: dimgray;
+}
+
+#educationTitle {
+    font-size: 24px;
+    padding-bottom: 16px;
+    font-weight: 600;
+}
+
+
 .educationIndentation {
     margin-left: 32px;
     margin-top: 0;
@@ -36,11 +47,11 @@
 
 .educationItemContainer {
  list-style-type: none;
- padding-left: 20px;
+ padding: 20px;
  border-radius: 12px;
  border-color: #ff8080;
  border-width: 2px;
  border-style: solid;
  width: 60%;
- margin-bottom: 12px;
+ margin-bottom: 32px;
 }

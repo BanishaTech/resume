@@ -6,19 +6,19 @@
     "location": "Esplugues, Barcelona",
     "summaryTitle": "Resum",
     "summaryContent": "Sóc una persona apassionada i motivada, actualment sóc junior developer de software amb un desig constant d'aprendre i millorar. Tinc coneixements bàsics de JavaScript, HTML5, CSS3 i m'encanta treballar en equip i descobrir noves coses. Sempre busco l'oportunitat d'aprendre més i créixer en termes personals i professionals.",
-    "skillsTitle": "Habilitats",
+    "skillsSectionTitle": "Habilitats",
     "skills": [
         {
             "skillTitle": "HTML5",
-            "percentage": 33
+            "percentage": 50
         },
         {
             "skillTitle": "CSS3",
-            "percentage": 22
+            "percentage": 30
         },
         {
             "skillTitle": "JS",
-            "percentage": 23
+            "percentage": 30
         }
     ],
     "educationTitle": "Estudis",

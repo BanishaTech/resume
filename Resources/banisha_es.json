@@ -6,19 +6,19 @@
     "location": "Esplugues, Barcelona",
     "summaryTitle": "Resumen",
     "summaryContent": "Soy una persona pasionada y motivada, actualmente soy junior sowftware developer y tengo unas ganas constantes de aprender y mejorar.\nTengo conocimientos básicos JavaScript, HTML5, CSS3 me encanta trabajar en equipo y descubrir nuevas cosas. Siempre busco la oportunidad de aprender más y crecer en términos personales y profesionales.",
-    "skillsTitle": "Habilidades",
+    "skillsSectionTitle": "Habilidades",
     "skills": [
         {
             "skillTitle": "HTML5",
-            "percentage": 33
+            "percentage": 50
         },
         {
             "skillTitle": "CSS3",
-            "percentage": 22
+            "percentage": 30
         },
         {
             "skillTitle": "JS",
-            "percentage": 23
+            "percentage": 30
         }
     ],
     "educationTitle": "Estudios",
@@ -38,8 +38,8 @@
             "organization": "Colegi Cami, Barcelona"
         }
     ],
-    "profesionalExperienceTitle": "Experiencia Profesional",
-    "profesionalExperienceItems": [
+    "professionalExperienceTitle": "Experiencia Profesional",
+    "professionalExperienceItems": [
         {
             "startDate": "Feb 2024",
             "endDate": "Actualidad",

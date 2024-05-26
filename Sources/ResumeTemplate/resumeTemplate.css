@@ -28,9 +28,10 @@ body {
 }
 
 .profilePhoto {
-    width: 256px;
+    width: 200px;
     border-radius: 50%;
-    height: 256px;
+    height: 200px;
+    object-fit: cover;
 }
 
 #profileNameColumn {
