@@ -10,15 +10,15 @@
     "skills": [
         {
             "skillTitle": "HTML5",
-            "percentage": 33
+            "percentage": 50
         },
         {
             "skillTitle": "CSS3",
-            "percentage": 22
+            "percentage": 30
         },
         {
             "skillTitle": "JS",
-            "percentage": 23
+            "percentage": 30
         }
     ],
     "educationTitle": "Estudios",

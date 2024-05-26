@@ -26,25 +26,25 @@
     font-size: 18px;
 }
 
-#progressBar {
+.progressBar {
 height: 3px;
 width: 120px;
 background-color: lightgray;
 }
 
-#progressBarFill {
+.progressBarFill {
     height: 100%;
     width: 50%;
     background-color: #ff8080;
 }
 
-#skillItem {
+.skillItem {
     font-size: 16px;
     margin-left: 32px;
     margin-bottom: 32px;
 }
 
-#skillItemTitle {
+.skillItemTitle {
      font-size: 16px;
      margin-bottom: 8px;
 } 

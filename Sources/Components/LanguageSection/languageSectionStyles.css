@@ -10,7 +10,7 @@
     color: dimgrey;
 }
 
-.languageItems {
+#languageItems {
     display: flex;
     flex-direction: row;
 }
