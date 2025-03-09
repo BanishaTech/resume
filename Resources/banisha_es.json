@@ -1,11 +1,11 @@
 {
     "name": "Banisha Kumari",
     "surname": "Shrestha",
-    "profilePhoto": "https://media.licdn.com/dms/image/D4D03AQH0gd4yBpr1mw/profile-displayphoto-shrink_200_200/0/1716321547440?e=2147483647&v=beta&t=40vjmbJ_9HdxTQm6sTNgGTtoGxl03XYHgqWuuCINcXk",
-    "email": "example@gmail.com",
+    "profilePhoto": "https://media.licdn.com/dms/image/v2/D4D35AQGPi6-ZVXkdIg/profile-framedphoto-shrink_800_800/B4DZVH.yfeG4Ak-/0/1740669397380?e=1742126400&v=beta&t=fnHkRLikPTWbVWU62kibpwZAnK4Ih6HV-ltCOpZGDaw",
+    "email": "banishaofficial01@gmail.com",
     "location": "Esplugues, Barcelona",
     "summaryTitle": "Resumen",
-    "summaryContent": "Soy una persona pasionada y motivada, actualmente soy junior sowftware developer y tengo unas ganas constantes de aprender y mejorar.\nTengo conocimientos básicos JavaScript, HTML5, CSS3 me encanta trabajar en equipo y descubrir nuevas cosas. Siempre busco la oportunidad de aprender más y crecer en términos personales y profesionales.",
+    "summaryContent": "Soy una persona apasionada y motivada, actualmente soy junior Software developer y tengo unas ganas constantes de aprender y mejorar.\nTengo conocimientos básicos JavaScript, HTML5, CSS3 me encanta trabajar en equipo y descubrir nuevas cosas. Siempre busco la oportunidad de aprender más y crecer en términos personales y profesionales.",
     "skillsSectionTitle": "Habilidades",
     "skills": [
         {
@@ -27,14 +27,21 @@
             "startDate": "2021",
             "endDate": "Actualidad",
             "title": "Grado en Criminología",
-            "summary": "Estudio del grado de Criminología oficial en el que entre otros temas hemos visto la existencia y la prevención de ciberdelitos",
+            "summary": "Cursando grado de Criminología oficial en el que entre otros temas hemos visto la existencia y la prevención de ciberdelitos",
             "organization": "Universitat Oberta de Catalunya"
+        },
+	   {
+            "startDate": "2024",
+            "endDate": "2025",
+            "title": "FPO Desarrollo de Páginas Web",
+            "summary": "Desarrollo de frontend utilizando HTML, CSS y JS, además de uso de frameworks como React.js o Django. Aprendizaje de fundamentos de programación con Java",
+            "organization": "Fundesplai"
         },
         {
             "startDate": "2020",
             "endDate": "2021",
             "title": "Grado Superior en Dietética y Nutrición Deportiva",
-            "summary": "Me ha proporcionado conocimientos especializados en la planificación de dietas equilibradas para deportistas, la optimización del rendimiento físico a través de la alimentación adecuada, la importancia de los nutrientes en la recuperación muscular y la hidratación, así como la aplicación de estrategias nutricionales específicas para diferentes tipos de deportes ",
+            "summary": "Me ha proporcionado conocimientos especializados en la planificación de dietas equilibradas para deportistas, la optimización del rendimiento físico a través de la alimentación adecuada, la importancia de los nutrientes en la recuperación muscular y la hidratación, así como la aplicación de estrategias nutricionales específicas para diferentes tipos de deportes",
             "organization": "Colegi Cami, Barcelona"
         }
     ],
