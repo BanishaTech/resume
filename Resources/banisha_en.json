@@ -1,8 +1,8 @@
 {
     "name": "Banisha Kumari",
     "surname": "Shrestha",
-    "profilePhoto": "https://media.licdn.com/dms/image/D4D03AQH0gd4yBpr1mw/profile-displayphoto-shrink_200_200/0/1716321547440?e=2147483647&v=beta&t=40vjmbJ_9HdxTQm6sTNgGTtoGxl03XYHgqWuuCINcXk",
-    "email": "example@gmail.com",
+    "profilePhoto": "https://media.licdn.com/dms/image/v2/D4D35AQGPi6-ZVXkdIg/profile-framedphoto-shrink_800_800/B4DZVH.yfeG4Ak-/0/1740669397380?e=1742126400&v=beta&t=fnHkRLikPTWbVWU62kibpwZAnK4Ih6HV-ltCOpZGDaw",
+    "email": "banishaofficial01@gmail.com",
     "location": "Esplugues, Barcelona",
     "summaryTitle": "Summary",
     "summaryContent": "I am a passionate and motivated individual, currently a junior software developer with a constant desire to learn and improve. I have basic knowledge of JavaScript, HTML5, CSS3, and I love working in teams and discovering new things. I always seek opportunities to learn more and grow both personally and professionally.",
@@ -30,6 +30,15 @@
             "summary": "Official Criminology degree studies where, among other topics, we have covered the existence and prevention of cybercrimes.",
             "organization": "Universitat Oberta de Catalunya"
         },
+        
+        {
+            "startDate": "2024",
+            "endDate": "2025",
+            "title": "FPO Dual Web Development",
+            "summary": "Web Development using HTML, CSS, JS and working with frameworks like React.js and Django. I've learned programming foundations in Java",
+            "organization": "Fundesplai",
+        },
+        
         {
             "startDate": "2020",
             "endDate": "2021",
